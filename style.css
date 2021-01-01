@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fixed-width{
+    width: 1050px;
+    margin: auto;
+}
+
+.clearfix::after{
+
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-left{
+    text-align: left;
+}
+
+..text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* extra header part start */
+
+.extra-header{
+    background-color: black;
+}
+.extra-header ul{
+    list-style: none;
+    display: block;
+}
+.extra-header ul li{
+    display: inline-block;
+}
+.extra-header ul li a{
+    color: white;
+    padding: 0px 30px;
+    text-decoration: none;
+    line-height: 40px;
+    font-family: tahoma;
+    font-size: 19px;
+    display: block;
+}
+
+.extra-header ul li a:hover{
+    background-color: rgb(18, 199, 223);
+    transition: 1s;
+}
+
+.extra-header ul li a:hover li a{
+    color:white;
+    color: black;
+}
+
+
+/* extra header part end */
+
+/* titel part start */
+
+.titel{
+    background-color: red;
+    line-height: 60px;
+}
+
+.titel h1{
+    font-family: tahoma;
+}
+
+.titel p{
+    font-family: tahoma;
+    font-size: 20px;
+}
+
+/* titel part end */
+
+/* main menu start */
+
+.main-menu{ 
+    background-color: black;
+}
+.main-menu  ul{
+    list-style: none;
+}
+.main-menu  ul li{
+    display: inline-block;
+    margin-right: -5px;
+    position: relative;
+}
+.main-menu ul li a {
+    color: white;
+    font-family: tahoma;
+    padding: 0px 30px;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 16px;
+    display: block;
+    transition: 1s;
+    font-family: tahoma;
+    border-right: 1px solid #ddd;
+}
+.main-menu  ul li:hover> a{
+    background-color: rgb(18, 199, 223);
+    transition: 1s;
+}
+
+/* main-menu end */
+
+/* drop down menu start */
+
+.main-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: red ;
+    width: 250px;
+    border-top: 1px solid #ddd;
+    transition: 1s;
+    
+}
+.main-menu ul li ul li{
+    display: block;
+    margin-right: 0px;
+}
+.main-menu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+   
+}
+
+
+/* hover part */
+.main-menu ul li ul {
+   opacity: 0;
+   visibility: hidden;
+}
+.main-menu ul li:hover ul{
+   opacity: 1;
+   visibility: visible;
+}
+
+/* manu part end */
+
